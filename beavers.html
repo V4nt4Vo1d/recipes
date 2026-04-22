@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css?v=20260422a">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beavers Family Recipes</title>
+</head>
+<body class="family-page">
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-brand" href="index.html">
+                <span class="site-brand__eyebrow">Family Table Archive</span>
+                <span class="site-brand__title">Family Recipes</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a class="site-nav__link" href="index.html">Home</a>
+                <a class="site-nav__link" href="raifsnider.html">Raifsnider</a>
+                <a class="site-nav__link" href="ricketts.html">Ricketts</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="site-shell">
+        <main class="main-surface recipe-page" data-recipe-page>
+            <section class="page-intro">
+                <div class="page-intro__meta">
+                    <div>
+                        <span class="hero__eyebrow">Family collection</span>
+                        <h1>Beavers Family Recipes</h1>
+                        <p>This collection is ready for recipes to be added while matching the same site-wide layout as the active family pages.</p>
+                    </div>
+                    <div class="page-intro__chips">
+                        <span class="page-chip">Main dishes</span>
+                        <span class="page-chip">Desserts</span>
+                        <a class="family-button family-button--secondary" href="index.html">&larr; Back to Family List</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-section__header">
+                    <div>
+                        <span class="category-section__label">Category one</span>
+                        <h2>Main Dishes</h2>
+                        <p>Click a recipe card to view it.</p>
+                    </div>
+                </div>
+                <div class="recipe-workspace">
+                    <div class="recipe-list">
+                        <button class="recipe-link" type="button" data-recipe-target="beavers-main-template" aria-expanded="true">
+                            <span><strong>Add Main Dish Recipe</strong><span>Use this starter card as your first main dish.</span></span>
+                        </button>
+                        <!-- Add more main dish recipe cards here. -->
+                    </div>
+
+                    <div class="recipe-panel-stack">
+                        <section class="recipe-detail-section" id="beavers-main-template">
+                            <h3>Main Dish Recipe Name</h3>
+                            <p>Add the full recipe details for this main dish.</p>
+                            <ul>
+                                <li>Ingredient goes here</li>
+                            </ul>
+                            <ol>
+                                <li>Step goes here</li>
+                            </ol>
+                            <p class="recipe-template-note">Duplicate this card and section, then update ids and names for each new recipe.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-section__header">
+                    <div>
+                        <span class="category-section__label">Category two</span>
+                        <h2>Desserts</h2>
+                        <p>Click a dessert card to view it.</p>
+                    </div>
+                </div>
+                <div class="recipe-workspace">
+                    <div class="recipe-list">
+                        <!-- <button class="recipe-link" type="button" data-recipe-target="beavers-dessert-template" aria-expanded="false">
+                            <span><strong>Add Dessert Recipe</strong><span>Use this starter card as your first dessert.</span></span>
+                        </button> -->
+                    </div>
+
+                    <div class="recipe-panel-stack">
+                        <!-- <section class="recipe-detail-section" id="beavers-dessert-template" hidden>
+                            <h3>Dessert Recipe Name</h3>
+                            <p>Add the full recipe details for this dessert.</p>
+                            <ul>
+                                <li>Ingredient goes here</li>
+                            </ul>
+                            <ol>
+                                <li>Step goes here</li>
+                            </ol>
+                            <p class="recipe-template-note">Duplicate this card and section, then update ids and names for each new recipe.</p>
+                        </section> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <p>Beavers family collection page prepared for future recipes.</p>
+                <p class="footer-note">The design is consistent even before recipes are added.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js?v=20260422a"></script>
+</body>
+</html>

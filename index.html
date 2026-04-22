@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css?v=20260422a">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Recipes</title>
+</head>
+<body class="home-page">
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-brand" href="index.html">
+                <span class="site-brand__eyebrow">Family Table Archive</span>
+                <span class="site-brand__title">Family Recipes</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <a class="site-nav__link is-current" href="index.html">Home</a>
+                <a class="site-nav__link" href="raifsnider.html">Raifsnider</a>
+                <a class="site-nav__link" href="ricketts.html">Ricketts</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="site-shell">
+        <section class="hero">
+            <div class="hero__panel">
+                <span class="hero__eyebrow">Collected family favorites</span>
+                <h1>Recipes passed down from one kitchen to the next.</h1>
+                <p class="hero__lede">This site keeps together the dishes, breads, soups, and desserts shared across the Raifsnider and Ricketts family tables so they are easy to browse, revisit, and keep in the family.</p>
+                <div class="hero__actions">
+                    <a class="family-button" href="#familyChoice">Browse recipe collections</a>
+                    <a class="family-button family-button--secondary" href="raifsnider.html">Open Raifsnider recipes</a>
+                </div>
+            </div>
+
+            <aside class="hero__aside" aria-label="Site highlights">
+                <ul class="hero-stat-list">
+                    <li>
+                        <strong>Two family collections</strong>
+                        <span>Separate recipe pages keep each family collection easy to browse.</span>
+                    </li>
+                    <li>
+                        <strong>Organized by category</strong>
+                        <span>Main dishes and desserts are grouped so recipes are easier to scan.</span>
+                    </li>
+                    <li>
+                        <strong>Built to preserve recipes</strong>
+                        <span>The purpose stays simple: save recipes and make them easy to find again.</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <main class="main-surface home-stack">
+            <section class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">Start here</span>
+                        <h2>Select a family collection</h2>
+                        <p class="section-copy">Choose a family page to browse recipes in a layout that feels more like a normal recipe site, while keeping the original content and purpose intact.</p>
+                    </div>
+                </div>
+
+                <div id="familyChoice" class="family-grid">
+                    <article class="family-card">
+                        <div class="family-card__title-row">
+                            <h3>Ricketts Family</h3>
+                            <span class="family-card__tag">Comfort food</span>
+                        </div>
+                        <p>Chicken and noodles, hearty stews, and the family dishes that feel like weeknight staples.</p>
+                        <div class="family-card__footer">
+                            <a id="rickettsFamily" class="family-button" href="ricketts.html" data-page="ricketts.html">View Ricketts recipes</a>
+                        </div>
+                    </article>
+
+                    <article class="family-card">
+                        <div class="family-card__title-row">
+                            <h3>Raifsnider Family</h3>
+                            <span class="family-card__tag">Mixed classics</span>
+                        </div>
+                        <p>Breakfast casseroles, soups, breads, and desserts collected from the Raifsnider side of the family.</p>
+                        <div class="family-card__footer">
+                            <a id="raifsniderFamily" class="family-button" href="raifsnider.html" data-page="raifsnider.html">View Raifsnider recipes</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">About this site</span>
+                        <h2>A simple archive for family cooking</h2>
+                    </div>
+                </div>
+
+                <div class="story-grid">
+                    <article class="story-card">
+                        <h3>Preserved as shared recipes</h3>
+                        <p>Each page keeps the original recipe wording and purpose, with the site design doing the work of making everything easier to use.</p>
+                    </article>
+                    <article class="story-card">
+                        <h3>Easy to browse</h3>
+                        <p>Recipe cards open details quickly, so the site behaves more like a normal collection than a plain list of text.</p>
+                    </article>
+                    <article class="story-card">
+                        <h3>Ready to grow</h3>
+                        <p>The layout can keep expanding as more families or recipes are added without needing to rethink the whole structure.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <p>Family recipe archive for the Raifsnider and Ricketts collections.</p>
+                <p class="footer-note">Preserving recipes worth making again.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js?v=20260422a"></script>
+</body>
+</html>
