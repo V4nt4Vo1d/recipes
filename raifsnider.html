@@ -29,20 +29,18 @@
                 <div>
                     <span class="hero__eyebrow">Family collection</span>
                     <h1>Raifsnider Family Recipes</h1>
-                    <p>The same family recipes are kept here, now framed like a more complete recipe site with clearer section hierarchy and navigation.</p>
+                    <p>These are the Raifsnider recipes we keep coming back to, saved so family and friends can cook them, share them, and pass them along.</p>
                 </div>
-                <div class="page-intro__chips">
-                    <span class="page-chip">Main dishes</span>
-                    <span class="page-chip">Desserts</span>
-                    <a class="family-button family-button--secondary" href="index.html">&larr; Back to Family List</a>
+                <div class="page-intro__chips" data-category-toggles>
+                    <button class="family-button family-button--secondary category-toggle" type="button" data-category-toggle="main" aria-pressed="true">Main Dishes</button>
+                    <button class="family-button family-button--secondary category-toggle" type="button" data-category-toggle="desserts" aria-pressed="false">Desserts</button>
                 </div>
             </div>
         </section>
 
-        <section class="category-section">
+        <section class="category-section" id="raifsnider-main" data-category-panel="main">
             <div class="category-section__header">
                 <div>
-                    <span class="category-section__label">Category one</span>
                     <h2>Main Dishes</h2>
                     <p>Click a recipe card to view it.</p>
                 </div>
@@ -59,7 +57,7 @@
                         <span><strong>BBQ Green Beans</strong><span>Sweet green beans with diced bacon and onions.</span></span>
                     </button>
                     <button class="recipe-link" type="button" data-recipe-target="raifsnider-quiche-lorraine" aria-expanded="false">
-                        <span><strong>Quiche Lorraine</strong><span>Classic bacon and cheese quiche in an unbaked pie shell.</span></span>
+                        <span><strong>Quiche Lorraine</strong><span>Classic bacon and cheese quiche in a pie shell.</span></span>
                     </button>
                     <button class="recipe-link" type="button" data-recipe-target="raifsnider-strawberry-bread" aria-expanded="false">
                         <span><strong>Strawberry Bread</strong><span>Sweet quick bread with strawberries, cinnamon, and pecans.</span></span>
@@ -139,19 +137,20 @@
                     </section>
                     <section class="recipe-detail-section" id="raifsniderBbqGreenBeans" hidden>
                         <h3>BBQ Green Beans</h3>
+                        <p class="recipe-source">Source: Stacey's Friends.</p>
                         <p>Approx. preparation time: 3 hours. Serves 8.</p>
                         <ul>
                             <li>8 slices of bacon, diced</li>
                             <li>1 onion, chopped</li>
                             <li>4 (1 lb. cans) cut green beans, drained</li>
-                            <li>1 cup of firmly packed brown sugar</li>
-                            <li>1 cup of catsup (ketchup)</li>
+                            <li>1 cup firmly packed brown sugar</li>
+                            <li>1 cup catsup (ketchup)</li>
                         </ul>
                         <ol>
                             <li>Cook bacon and onion in skillet over medium heat until bacon is crispy.</li>
                             <li>Remove with a slotted spoon and place in a large bowl</li>
                             <li>Add the drained green beans.</li>
-                            <li>Mix the surgar and catsup and add to the green beans and bacon.</li>
+                            <li>Mix the sugar and catsup and add to the green beans and bacon.</li>
                             <li>Mix everything together well and pour into a baking dish.</li>
                             <li>Bake covered at 250 degrees for 3 hours.</li>
 
@@ -206,6 +205,7 @@
                             <li>Gently loosen bread from pan sides and cool on a rack.</li>
                         </ol>
                         <p class="recipe-template-note">Keeps in the refrigerator up to 3 weeks and can be frozen.</p>
+                        <p class="recipe-template-note2">Tip: Tossing the nuts with flour helps keep the nuts suspended in the batter and not drop to the bottom of the bread.</p>
                     </section>
                     <section class="recipe-detail-section" id="raifsnider-pumpkin-bread" hidden>
                         <h3>Pumpkin Bread</h3>
@@ -254,9 +254,12 @@
                             <li>Cream together butter and sugar, then add eggs.</li>
                             <li>Add bananas and mix in dry ingredients until blended.</li>
                             <li>Fold in nuts and place in a well-greased loaf pan.</li>
-                            <li>Bake at 350 degrees for 40-45 minutes.</li>
-                            <li>Test with a toothpick, then cool on a rack and wrap tightly in foil.</li>
+                            <li>Bake at 350 degrees for one hour.</li>
+                            <li>Test with a toothpick by seeing if the pick comes out clean.</li>
+                            <li>Run knife around edges and remove from pan to cool on a rack.</li>
+                            <li>Wrap tightly in foil for storage.</li>
                         </ol>
+                        <p class="recipe-template-note">You can make two medium sized loaves and bake for 40-45 minutes.</p>
                     </section>
                     <section class="recipe-detail-section" id="raifsnider-crockpot-steak-soup" hidden>
                         <h3>Crockpot Steak Soup</h3>
@@ -333,8 +336,8 @@
                             <li>1 1/2 to 2 tablespoons chili powder</li>
                         </ul>
                         <ol>
-                            <li>Brown beef and onion together until no pink remains.</li>
-                            <li>If meat is too lean, lightly spray pot to prevent sticking.</li>
+                            <li>Brown beef and onion together until there is no pink.</li>
+                            <li>If meat is too lean, lightly spray pot with Pam to prevent sticking.</li>
                             <li>Add remaining ingredients and stir well.</li>
                             <li>Bring to a boil, then reduce heat and simmer 15-20 minutes.</li>
                             <li>Add more chili powder for a hotter chili.</li>
@@ -359,7 +362,7 @@
                             <li>Cook onion in margarine until crisp-tender.</li>
                             <li>Add broth, potatoes, salt, and pepper.</li>
                             <li>In a small bowl, whisk flour with half and half.</li>
-                            <li>Stir mixture into soup and add beans, if using.</li>
+                            <li>Stir mixture into soup and add beans (if using).</li>
                             <li>Simmer for about 10 minutes.</li>
                         </ol>
                     </section>
@@ -409,10 +412,9 @@
             </div>
         </section>
 
-        <section class="category-section">
+        <section class="category-section" id="raifsnider-desserts" data-category-panel="desserts">
             <div class="category-section__header">
                 <div>
-                    <span class="category-section__label">Category two</span>
                     <h2>Desserts</h2>
                     <p>Click a recipe card to view it.</p>
                 </div>
@@ -432,7 +434,7 @@
                             <li>1 box German chocolate cake mix</li>
                             <li>1 can sweetened Eagle Brand condensed milk</li>
                             <li>3/4 cup softened butter</li>
-                            <li>1 package caramels, unwrapped (14 oz.)</li>
+                            <li>1 package caramels, unwrapped</li>
                             <li>6 oz. chocolate chips</li>
                             <li>1 cup chopped nuts</li>
                         </ul>
@@ -454,10 +456,11 @@
 
     <footer class="site-footer">
         <div class="footer-grid">
-            <p>Raifsnider family recipes presented in a clearer archive-style layout.</p>
-            <p class="footer-note">Open a recipe card to view the full details.</p>
+            <p>A place to keep Raifsnider favorites close for the next generation.</p>
+            <p class="footer-note">Made for family and friends to cook, share, and pass on.</p>
         </div>
     </footer>
+    <p class="site-legal">&copy; 2026 Jacob Raifsnider. All rights reserved.</p>
 
     <div class="recipe-modal" data-recipe-modal hidden>
         <div class="recipe-modal__backdrop" data-recipe-modal-close></div>

@@ -27,25 +27,34 @@
             <div class="hero__panel">
                 <span class="hero__eyebrow">Collected family favorites</span>
                 <h1>Recipes passed down from one kitchen to the next.</h1>
-                <p class="hero__lede">This site keeps together the dishes, breads, soups, desserts, and more shared across the Raifsnider and Ricketts family tables so they are easy to revisit, and keep in the family.</p>
-                <div class="hero__actions">
-                    <a class="family-button" href="#familyChoice">Browse recipe collections</a>
-                </div>
+                <p class="hero__lede">This site keeps together the dishes, breads, soups, desserts, and more that are shared across the Raifsnider and Ricketts family tables so they are easy to revisit, and keep in the family.</p>
             </div>
 
-            <aside class="hero__aside" aria-label="Site highlights">
-                <ul class="hero-stat-list">
-                    <li>
-                        <strong>Recipes worth repeating</strong>
-                        <span>Go-to meals, desserts, and more gathered in one place.</span>
+            <aside class="hero__aside" aria-label="Featured recipes">
+                <div class="featured-header">
+                    <span class="section-label">From the collection</span>
+                </div>
+                <ul class="featured-recipe-list">
+                    <li class="featured-recipe-item">
+                        <a href="ricketts.html#ricketts-chicken-noodles" class="featured-recipe-link">
+                            <span class="featured-recipe-name">Chicken and Noodles</span>
+                            <span class="featured-recipe-desc">Rich broth and homestyle egg noodles — a Ricketts staple.</span>
+                            <span class="featured-recipe-family">Ricketts</span>
+                        </a>
                     </li>
-                    <li>
-                        <strong>Organized by category</strong>
-                        <span>Main dishes and desserts are grouped so recipes are easier to view.</span>
+                    <li class="featured-recipe-item">
+                        <a href="raifsnider.html#raifsnider-banana-bread" class="featured-recipe-link">
+                            <span class="featured-recipe-name">Banana Bread</span>
+                            <span class="featured-recipe-desc">Moist, pecan-loaded quick bread from the Raifsnider kitchen.</span>
+                            <span class="featured-recipe-family">Raifsnider</span>
+                        </a>
                     </li>
-                    <li>
-                        <strong>Shared for family and friends</strong>
-                        <span>A home for the recipes we love to make and pass along.</span>
+                    <li class="featured-recipe-item">
+                        <a href="ricketts.html#ricketts-veggie-beef-stew" class="featured-recipe-link">
+                            <span class="featured-recipe-name">Veggie Beef Stew</span>
+                            <span class="featured-recipe-desc">Ground beef with tomato sauce, potatoes, green beans, corn, and carrots.</span>
+                            <span class="featured-recipe-family">Ricketts</span>
+                        </a>
                     </li>
                 </ul>
             </aside>
@@ -67,7 +76,7 @@
                             <h3>Ricketts Family</h3>
                             <span class="family-card__tag">Favorites</span>
                         </div>
-                        <p>Chicken and noodles, hearty stews, and more collected from the Ricketts side of the family.</p>
+                        <p>Chicken and noodles, hearty stews, and more collected from the Ricketts family.</p>
                         <div class="family-card__footer">
                             <a id="rickettsFamily" class="family-button" href="ricketts.html" data-page="ricketts.html">View Ricketts recipes</a>
                         </div>
@@ -78,7 +87,7 @@
                             <h3>Raifsnider Family</h3>
                             <span class="family-card__tag">Favorites</span>
                         </div>
-                        <p>Chili, soups, breads, and more collected from the Raifsnider side of the family.</p>
+                        <p>Chili, soups, breads, and more collected from the Raifsnider family.</p>
                         <div class="family-card__footer">
                             <a id="raifsniderFamily" class="family-button" href="raifsnider.html" data-page="raifsnider.html">View Raifsnider recipes</a>
                         </div>
@@ -86,27 +95,16 @@
                 </div>
             </section>
 
-            <section class="section-card">
-                <div class="section-heading">
-                    <div>
-                        <span class="section-label">About this site</span>
-                        <h2>A simple archive for family cooking</h2>
+            <section class="section-card kitchen-wisdom-card">
+                <div class="wisdom-inner">
+                    <span class="section-label">From the kitchen</span>
+                    <div class="wisdom-display" id="wisdomDisplay">
+                        <p class="wisdom-text" id="wisdomText"></p>
+                        <div class="wisdom-meta">
+                            <span class="wisdom-badge" id="wisdomBadge"></span>
+                            <span class="wisdom-attribution" id="wisdomAttribution"></span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="story-grid">
-                    <article class="story-card">
-                        <h3>Preserved with care</h3>
-                        <p>Each recipe is kept true to how it was originally shared, so the details and traditions stay intact.</p>
-                    </article>
-                    <article class="story-card">
-                        <h3>Rooted in tradition</h3>
-                        <p>From holiday traditions to weeknight staples, these recipes reflect the meals that have brought our family together over the years.</p>
-                    </article>
-                    <article class="story-card">
-                        <h3>Made to be passed on</h3>
-                        <p>This collection is built to grow over time, so family favorites can be shared for generations.</p>
-                    </article>
                 </div>
             </section>
         </main>
@@ -117,6 +115,7 @@
                 <p class="footer-note">Preserving recipes worth making again.</p>
             </div>
         </footer>
+        <p class="site-legal">&copy; 2026 Jacob Raifsnider. All rights reserved.</p>
     </div>
 
     <script src="script.js?v=20260422a"></script>

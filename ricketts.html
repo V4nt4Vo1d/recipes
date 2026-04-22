@@ -29,27 +29,25 @@
                 <div>
                     <span class="hero__eyebrow">Family collection</span>
                     <h1>Ricketts Family Recipes</h1>
-                    <p>A fuller recipe page for the Ricketts collection, keeping the same dishes while presenting them in a more standard website layout.</p>
+                    <p>These are the Ricketts recipes that have been shared around our table for years, kept here so family and friends can make them and keep them going.</p>
                 </div>
-                <div class="page-intro__chips">
-                    <span class="page-chip">Main dishes</span>
-                    <span class="page-chip">Desserts</span>
-                    <a class="family-button family-button--secondary" href="index.html">&larr; Back to Family List</a>
+                <div class="page-intro__chips" data-category-toggles>
+                    <button class="family-button family-button--secondary category-toggle" type="button" data-category-toggle="main" aria-pressed="true">Main Dishes</button>
+                    <button class="family-button family-button--secondary category-toggle" type="button" data-category-toggle="desserts" aria-pressed="false">Desserts</button>
                 </div>
             </div>
         </section>
 
-        <section class="category-section">
+        <section class="category-section" id="ricketts-main" data-category-panel="main">
             <div class="category-section__header">
                 <div>
-                    <span class="category-section__label">Category one</span>
                     <h2>Main Dishes</h2>
                     <p>Click a recipe card to view it.</p>
                 </div>
             </div>
             <div class="recipe-workspace">
                 <div class="recipe-list">
-                    <button class="recipe-link" type="button" data-recipe-target="ricketts-chicken-noodles" aria-expanded="true">
+                    <button class="recipe-link" type="button" data-recipe-target="ricketts-chicken-noodles" aria-expanded="false">
                         <span><strong>Chicken and Noodles</strong><span>Chicken breast simmered with egg noodles in a rich broth.</span></span>
                     </button>
                     <button class="recipe-link" type="button" data-recipe-target="ricketts-chicken-potato-stew" aria-expanded="false">
@@ -185,10 +183,9 @@
             </div>
         </section>
 
-        <section class="category-section">
+        <section class="category-section" id="ricketts-desserts" data-category-panel="desserts">
             <div class="category-section__header">
                 <div>
-                    <span class="category-section__label">Category two</span>
                     <h2>Desserts</h2>
                     <p>No dessert recipes added yet.</p>
                 </div>
@@ -216,10 +213,11 @@
 
     <footer class="site-footer">
         <div class="footer-grid">
-            <p>Ricketts family recipes presented in a browsable archive layout.</p>
-            <p class="footer-note">Use the cards to open each recipe.</p>
+            <p>A place to keep Ricketts favorites close for the next generation.</p>
+            <p class="footer-note">Made for family and friends to cook, share, and pass on.</p>
         </div>
     </footer>
+    <p class="site-legal">&copy; 2026 Jacob Raifsnider. All rights reserved.</p>
     </div>
     <script src="script.js?v=20260422a"></script>
 </body>
