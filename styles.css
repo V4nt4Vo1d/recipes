@@ -24,6 +24,8 @@
 
 html {
     scroll-behavior: smooth;
+    background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+    background-attachment: fixed;
 }
 
 body {
