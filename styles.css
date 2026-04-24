@@ -29,6 +29,7 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    min-height: 100dvh;
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     color: var(--text-main);
     background:
@@ -823,22 +824,42 @@ body.modal-open {
     }
 
     .recipe-modal {
-        padding: 0 0.35rem max(0.35rem, env(safe-area-inset-bottom));
+        place-items: stretch;
+        padding:
+            max(0.2rem, env(safe-area-inset-top))
+            max(0.35rem, env(safe-area-inset-right))
+            max(0.35rem, env(safe-area-inset-bottom))
+            max(0.35rem, env(safe-area-inset-left));
     }
 
     .recipe-modal__dialog {
-        width: min(760px, 100%);
-        max-height: 92vh;
-        padding: 0.95rem 0.95rem 1.15rem;
+        width: 100%;
+        max-height: 100dvh;
+        height: 100dvh;
+        border-radius: 0;
+        padding:
+            max(0.95rem, env(safe-area-inset-top))
+            max(0.95rem, env(safe-area-inset-right))
+            max(1.15rem, env(safe-area-inset-bottom))
+            max(0.95rem, env(safe-area-inset-left));
     }
 
     .recipe-modal__close {
-        top: 0.25rem;
-        right: 0.15rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        font-size: 1.55rem;
+        position: fixed;
+        top: max(0.5rem, env(safe-area-inset-top));
+        right: max(0.5rem, env(safe-area-inset-right));
+        width: 2.7rem;
+        height: 2.7rem;
+        border: 1px solid rgba(114, 43, 33, 0.22);
+        font-size: 1.7rem;
         line-height: 1;
+        background: rgba(255, 248, 239, 0.96);
+        box-shadow: 0 10px 24px rgba(43, 32, 24, 0.18);
+        z-index: 3;
+    }
+
+    .recipe-modal__content {
+        padding-top: 2.6rem;
     }
 }
 
