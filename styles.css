@@ -24,21 +24,17 @@
 
 html {
     scroll-behavior: smooth;
-    min-height: 100%;
-    height: -webkit-fill-available;
     background-color: var(--bg-top);
-    background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
 }
 
 body {
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
-    min-height: -webkit-fill-available;
     padding-bottom: env(safe-area-inset-bottom);
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     color: var(--text-main);
-    background: transparent;
+    background-color: var(--bg-top);
     position: relative;
     overflow-x: hidden;
 }
