@@ -24,6 +24,8 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    height: -webkit-fill-available;
     background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
 }
 
@@ -31,15 +33,26 @@ body {
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: -webkit-fill-available;
     padding-bottom: env(safe-area-inset-bottom);
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     color: var(--text-main);
+    background: transparent;
+    position: relative;
+    isolation: isolate;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
     background:
         radial-gradient(circle at top left, rgba(255, 255, 255, 0.76) 0, rgba(255, 255, 255, 0) 30%),
         radial-gradient(circle at 85% 18%, rgba(197, 127, 88, 0.22) 0, rgba(197, 127, 88, 0) 28%),
         linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
-    position: relative;
-    overflow-x: hidden;
 }
 
 a {
