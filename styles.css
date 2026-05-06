@@ -24,22 +24,19 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--bg-top);
-    height: 100%;
+    background-color: var(--bg-bottom);
 }
 
 body {
     margin: 0;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
+    min-height: 100lvh;
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     color: var(--text-main);
     background:
         radial-gradient(circle at top left, rgba(255, 255, 255, 0.76) 0, rgba(255, 255, 255, 0) 30%),
         radial-gradient(circle at 85% 18%, rgba(197, 127, 88, 0.22) 0, rgba(197, 127, 88, 0) 28%),
         linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+    overflow-x: hidden;
 }
 
 a {
@@ -695,6 +692,7 @@ h3 {
 .site-legal {
     width: var(--content-width);
     margin: 0.65rem auto 0;
+    padding-bottom: env(safe-area-inset-bottom);
     text-align: center;
     color: rgba(84, 64, 50, 0.64);
     font-size: 0.78rem;
