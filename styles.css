@@ -24,19 +24,35 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--bg-bottom);
+    min-height: 100%;
+    background: transparent;
 }
 
 body {
     margin: 0;
-    min-height: 100lvh;
+    min-height: 100dvh;
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
     color: var(--text-main);
+    background: transparent;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
     background:
         radial-gradient(circle at top left, rgba(255, 255, 255, 0.76) 0, rgba(255, 255, 255, 0) 30%),
         radial-gradient(circle at 85% 18%, rgba(197, 127, 88, 0.22) 0, rgba(197, 127, 88, 0) 28%),
         linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
-    overflow-x: hidden;
+}
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        min-height: -webkit-fill-available;
+    }
 }
 
 a {
@@ -65,7 +81,6 @@ img {
     backdrop-filter: blur(18px);
     background: rgba(248, 238, 226, 0.86);
     border-bottom: 1px solid rgba(108, 71, 47, 0.1);
-    padding-top: env(safe-area-inset-top);
 }
 
 .site-header__inner,
@@ -692,7 +707,7 @@ h3 {
 .site-legal {
     width: var(--content-width);
     margin: 0.65rem auto 0;
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: max(0.35rem, env(safe-area-inset-bottom));
     text-align: center;
     color: rgba(84, 64, 50, 0.64);
     font-size: 0.78rem;
@@ -857,7 +872,7 @@ body.modal-open {
     }
 
     .site-shell {
-        padding-top: 1rem;
+        padding-top: 0.75rem;
     }
 
     .hero {
